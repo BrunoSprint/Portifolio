@@ -284,6 +284,12 @@ body {
         text-align: center;
         font-family: 'Anonymous Pro', monospace;
         align-items: center;
+        max-height: 300px; /* Altura máxima da div antes de aparecer a barra de rolagem */
+        overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
+        overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal */
+        color: #0f0;
+        font-family: 'Anonymous Pro', monospace;
+        align-items: center;
     }
 
     h1 {
