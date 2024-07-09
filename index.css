@@ -59,7 +59,6 @@ section::before {
   height: 100%;
   background: linear-gradient(#000,#0f0,#000);
   animation: animate 5s linear infinite;
-  flex-wrap: wrap;
 }
 
 @keyframes animate {
@@ -80,7 +79,6 @@ section span {
   background: #181818;
   z-index: 2;
   transition: 1.5s;
-  flex-wrap: wrap;
 }
 
 section span:hover {
@@ -99,7 +97,6 @@ section .signin {
   padding: 40px;
   border-radius: 4px;
   box-shadow: 0 15px 35px rgba(0,0,0,9);
-  flex-wrap: wrap;
 }
 section .signin .content {
   position: relative;
@@ -109,7 +106,6 @@ section .signin .content {
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 section .signin .content h2 {
@@ -117,7 +113,6 @@ section .signin .content h2 {
   color: #0f0;
   text-transform: uppercase;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 section .signin .content .form {
@@ -125,13 +120,11 @@ section .signin .content .form {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  flex-wrap: wrap;
 }
 
 section .signin .content .form .inputBox {
   position: relative;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 section .signin .content .form .inputBox input {
@@ -145,7 +138,6 @@ section .signin .content .form .inputBox input {
   color: #0f0;
   font-weight: 500;
   font-size: 1em;
-  flex-wrap: wrap;
 }
 section .signin .content .form .inputBox i {
   position: absolute;
@@ -155,7 +147,6 @@ section .signin .content .form .inputBox i {
   color: #0f0;
   transition: 0.5s;
   pointer-events: none;
-  flex-wrap: wrap;
 }
 
 .signin .content .form .inputBox input:focus ~ i,
@@ -163,7 +154,6 @@ section .signin .content .form .inputBox i {
   transform: translateY(-7.5px);
   font-size: 0.8em;
   color: #0f0;
-  flex-wrap: wrap;
 }
 
 .signin .content .form .links {
@@ -171,19 +161,16 @@ section .signin .content .form .inputBox i {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .signin .content .form .links a {
   color: #0f0;
   text-decoration: none;
-  flex-wrap: wrap;
 }
 
 .signin .content .form .links a:nth-child(2) {
   color: #0f0;
   font-weight: 600;
-  flex-wrap: wrap;
 }
 
 .signin .content .form .inputBox input[type="submit"] {
@@ -194,12 +181,10 @@ section .signin .content .form .inputBox i {
   font-size: 1.35em;
   letter-spacing: 0.05em;
   cursor: pointer;
-  flex-wrap: wrap;
 }
 
 input[type="submit"]:active {
   opacity: 0.6;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 900px) {
@@ -207,7 +192,6 @@ input[type="submit"]:active {
   {
     width: calc(10vw - 2px);
     height: calc(10vw - 2px);
-    flex-wrap: wrap;
   }
 }
 
@@ -216,7 +200,6 @@ input[type="submit"]:active {
   {
     width: calc(20vw - 2px);
     height: calc(20vw - 2px);
-    flex-wrap: wrap;
   }
 }
 
@@ -232,7 +215,6 @@ body {
     color: #0f0;
     font-size: 14px;
     align-items: center;
-    flex-wrap: wrap;
     .container {
     width: 90%;
     margin: 0 auto;
@@ -276,7 +258,6 @@ body {
         text-decoration: none; /* Remova a sublinhado padrão do link */
         cursor: pointer; /* Mude o cursor ao passar o mouse sobre o botão */
         align-items: center;
-        flex-wrap: wrap;
     }    
 
     .text {
@@ -286,7 +267,6 @@ body {
       color: #0f0;
       font-family: 'Anonymous Pro', monospace;
       align-items: center;
-      flex-wrap: wrap;
   }
 
 
@@ -298,14 +278,13 @@ body {
         background-color: #000;
         font-family: 'Anonymous Pro', monospace;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     .content {
         text-align: center;
         font-family: 'Anonymous Pro', monospace;
         align-items: center;
-        flex-wrap: wrap;
+        
     }
 
     h1 {
@@ -313,7 +292,6 @@ body {
         font-family: 'Anonymous Pro', monospace;
         text-align: center;
         align-items: center;
-        flex-wrap: wrap;
     }
 
 
@@ -321,14 +299,12 @@ body {
         color: #0f0;
         font-family: 'Anonymous Pro', monospace;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     h3 {
         color: #0f0;
         font-family: 'Anonymous Pro', monospace;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     p {
@@ -339,7 +315,6 @@ body {
         overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
         overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal */
         align-items: center;
-        flex-wrap: wrap;
     }
 
     
