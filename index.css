@@ -3,7 +3,6 @@
 body {
   background: #000;
   align-items: center;
-  flex-wrap: wrap;
 
   body {
     font-family: 'Anonymous Pro', monospace;
@@ -13,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   @media only screen and (max-width: 600px) {
@@ -22,7 +20,6 @@ body {
     body {
      font-size: 14px;
      align-items: center;
-     flex-wrap: wrap;
      }
     .container {
     width: 100%;
