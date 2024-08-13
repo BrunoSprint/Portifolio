@@ -1,324 +1,242 @@
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-  *
-body {
-  background: #000;
-  align-items: center;
-  flex-wrap: wrap;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-  body {
-    font-family: 'Anonymous Pro', monospace;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background: #000;
+    color: #0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
     flex-wrap: wrap;
-  }
-
-  @media only screen and (max-width: 600px) {
-    
-    /* Adicione seus estilos específicos para dispositivos móveis aqui */
-    body {
-     font-size: 14px;
-     align-items: center;
-     flex-wrap: wrap;
-     }
-    .container {
     width: 100%;
-    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
     }
     .menu {
-    display: none;
+        display: none;
     }
-  } 
-
-  @media only screen and (min-width: 601px) and (max-width: 601px) {
-    align-items: center;
-    /* Adicione seus estilos específicos para tablets aqui */
-  }
-
-  @media only screen and (min-width: 1025px) {
-    align-items: center;
-    /* Adicione seus estilos específicos para PCs aqui */
-  }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione seus estilos específicos para tablets aqui */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Adicione seus estilos específicos para PCs aqui */
+}
+
 section {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-  flex-wrap: wrap;
-  overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 section::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#000,#0f0,#000);
-  animation: animate 5s linear infinite;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000,#0f0,#000);
+    animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
-  0%
-  {
-    transform: translateY(-100%);
-  }
-  100%
-  {
-    transform: translateY(100%);
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
 }
+
 section span {
-  position: relative;
-  display: block;
-  width: calc(6.25vw - 2px);
-  height: calc(6.25vw - 2px);
-  background: #181818;
-  z-index: 2;
-  transition: 1.5s;
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: 1.5s;
 }
 
 section span:hover {
-  background: #0f0;
-  transition: 0s;
+    background: #0f0;
+    transition: 0s;
 }
 
 section .signin {
-  position: absolute;
-  width: 800px;
-  background: #000;  
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(0,0,0,9);
+    position: absolute;
+    width: 800px;
+    background: #000;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
 }
+
 section .signin .content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
 }
 
 section .signin .content h2 {
-  font-size: 2em;
-  color: #0f0;
-  text-transform: uppercase;
-  align-items: center;
+    font-size: 2em;
+    color: #0f0;
+    text-transform: uppercase;
 }
 
 section .signin .content .form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 section .signin .content .form .inputBox {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 section .signin .content .form .inputBox input {
-  position: relative;
-  width: 100%;
-  background: #333;
-  border: none;
-  outline: none;
-  padding: 25px 10px 7.5px;
-  border-radius: 4px;
-  color: #0f0;
-  font-weight: 500;
-  font-size: 1em;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #0f0;
+    font-weight: 500;
+    font-size: 1em;
 }
+
 section .signin .content .form .inputBox i {
-  position: absolute;
-  left: 0;
-  padding: 15px 10px;
-  font-style: normal;
-  color: #0f0;
-  transition: 0.5s;
-  pointer-events: none;
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #0f0;
+    transition: 0.5s;
+    pointer-events: none;
 }
 
 .signin .content .form .inputBox input:focus ~ i,
 .signin .content .form .inputBox input:valid ~ i {
-  transform: translateY(-7.5px);
-  font-size: 0.8em;
-  color: #0f0;
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #0f0;
 }
 
 .signin .content .form .links {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .signin .content .form .links a {
-  color: #0f0;
-  text-decoration: none;
+    color: #0f0;
+    text-decoration: none;
 }
 
 .signin .content .form .links a:nth-child(2) {
-  color: #0f0;
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .signin .content .form .inputBox input[type="submit"] {
-  padding: 10px;
-  background: #0f0;
-  color: #000;
-  font-weight: 600;
-  font-size: 1.35em;
-  letter-spacing: 0.05em;
-  cursor: pointer;
+    padding: 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
 }
 
 input[type="submit"]:active {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 @media (max-width: 900px) {
-  section span 
-  {
-    width: calc(10vw - 2px);
-    height: calc(10vw - 2px);
-  }
+    section span {
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
+    }
 }
 
 @media (max-width: 600px) {
-  section span 
-  {
-    width: calc(20vw - 2px);
-    height: calc(20vw - 2px);
-  }
+    section span {
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+    }
 }
 
-________________________________________________________________________
-
-
-
-body {
-    font-family: 'Anonymous Pro', monospace;
-    margin: 0;
-    padding: 0;
-    background-color: #0000;
-    color: #0f0;
-    font-size: 14px;
+/* Estilizando o botão */
+button {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     align-items: center;
-    .container {
-    width: 90%;
-    margin: 0 auto;
-    }
-    .menu {
-    display: none;
-    }
+}    
 
+.text {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
+    color: #0f0;
+    font-family: 'Anonymous Pro', monospace;
+}
 
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
+.signin {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #000;
+}
 
-        .container {
-        width: 90%;
-        margin: 0 auto;
-        }
-        .menu {
-        display: none;
-        }
-    
-        .text {
-        width: 100%;
-        }
-    }
-        
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adicione seus estilos específicos para tablets aqui */
-    }
+.content {
+    text-align: center;
+}
 
-    @media only screen and (min-width: 1025px) {
-    /* Adicione seus estilos específicos para PCs aqui */
-    }
-}        
+h1, h2, h3 {
+    color: #0f0;
+    font-family: 'Anonymous Pro', monospace;
+}
 
-    /* Estilizando o botão */
-    button {
-        background-color: black;
-        color: lightgreen;
-        padding: 10px 20px; /* Adicione algum preenchimento para melhorar a aparência */
-        border: none; /* Remova a borda padrão do botão */
-        text-decoration: none; /* Remova a sublinhado padrão do link */
-        cursor: pointer; /* Mude o cursor ao passar o mouse sobre o botão */
-        align-items: center;
-    }    
-
-    .text {
-      max-height: 300px; /* Altura máxima da div antes de aparecer a barra de rolagem */
-      overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
-      overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal */
-      color: #0f0;
-      font-family: 'Anonymous Pro', monospace;
-      align-items: center;
-  }
-
-
-    .signin {
-        width: 500px;
-        margin: 50px auto;
-        padding: 20px;
-        border: 1px solid #000;
-        background-color: #000;
-        font-family: 'Anonymous Pro', monospace;
-        align-items: center;
-    }
-
-    .content {
-        text-align: center;
-        font-family: 'Anonymous Pro', monospace;
-        align-items: center;
-        
-    }
-
-    h1 {
-        color: #0f0;
-        font-family: 'Anonymous Pro', monospace;
-        text-align: center;
-        align-items: center;
-    }
-
-
-    h2 {
-        color: #0f0;
-        font-family: 'Anonymous Pro', monospace;
-        align-items: center;
-    }
-
-    h3 {
-        color: #0f0;
-        font-family: 'Anonymous Pro', monospace;
-        align-items: center;
-    }
-
-    p {
-        margin: 0;
-        text-align: center;
-        color: #0f0;
-        font-family: 'Anonymous Pro', monospace;
-        overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
-        overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal */
-        align-items: center;
-    }
-
-    
-
+p {
+    margin: 0;
+    text-align: center;
+    color: #0f0;
+    overflow-y: auto;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
+}
