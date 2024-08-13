@@ -6,29 +6,48 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Remove a rolagem lateral */
+body {
     font-family: 'Anonymous Pro', monospace;
-    background-color: #000;
+    background: #000;
     color: #0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Centraliza verticalmente */
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione seus estilos específicos para tablets aqui */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Adicione seus estilos específicos para PCs aqui */
 }
 
 section {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
-    position: relative;
     flex-wrap: wrap;
     overflow: hidden;
 }
@@ -67,7 +86,7 @@ section span:hover {
 }
 
 section .signin {
-    position: relative;
+    position: absolute;
     width: 800px;
     background: #000;
     z-index: 1000;
@@ -80,6 +99,7 @@ section .signin {
 }
 
 section .signin .content {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -102,6 +122,7 @@ section .signin .content .form {
 }
 
 section .signin .content .form .inputBox {
+    position: relative;
     width: 100%;
 }
 
@@ -184,13 +205,15 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-}
+    align-items: center;
+}    
 
 .text {
     max-height: 300px;
     overflow-y: auto;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
     color: #0f0;
-    text-align: center; /* Centraliza o texto */
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .signin {
@@ -207,7 +230,7 @@ button {
 
 h1, h2, h3 {
     color: #0f0;
-    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 p {
@@ -215,5 +238,5 @@ p {
     text-align: center;
     color: #0f0;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
 }
