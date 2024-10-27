@@ -1,110 +1,251 @@
-/* Configurações Globais */
-*,
-*::before,
-*::after {
-    box-sizing: border-box; /* Inclui padding e bordas no cálculo do tamanho total do elemento */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Anonymous Pro', monospace;
-    background-color: #000; /* Fundo preto para o visual estilo terminal */
-    color: #0f0; /* Cor de fonte verde para o visual estilo terminal */
+    background: #000;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione seus estilos específicos para tablets aqui */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Adicione seus estilos específicos para PCs aqui */
+}
+
+section {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000,#0f0,#000);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+section span {
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: 1.5s;
+}
+
+section span:hover {
+    background: #0f0;
+    transition: 0s;
+}
+
+section .signin {
+    position: absolute;
+    width: 800px;
+    background: #000;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+    /* Alinhando o conteúdo dentro da área de signin */
+    flex-direction: column;
+    text-align: center;
+}
+
+section .signin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section .signin .content h2 {
+    font-size: 2em;
+    color: #0f0;
+    text-transform: uppercase;
+}
+
+section .signin .content .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
+}
+
+section .signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+section .signin .content .form .inputBox input {
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #0f0;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+section .signin .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #0f0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #0f0;
+}
+
+.signin .content .form .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin .content .form .links a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+.signin .content .form .links a:nth-child(2) {
+    font-weight: 600;
+}
+
+.signin .content .form .inputBox input[type="submit"] {
+    padding: 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+    section span {
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
+    }
+}
+
+@media (max-width: 600px) {
+    section span {
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+    }
+}
+
+/* Estilizando o botão */
+button {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh; /* Mantém o conteúdo sempre com altura mínima igual à da tela */
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-    overflow-x: hidden; /* Remove a rolagem horizontal */
+}    
+
+.text {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
+    color: #0f0;
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center; /* Centraliza o texto */
 }
 
-/* Estilização de Contêineres de Seção */
-header, section {
-    width: 100%;
-    max-width: 800px; /* Limita a largura máxima para melhorar a legibilidade */
-    margin-bottom: 20px;
+.signin {
+    width: 500px;
+    margin: 50px auto;
     padding: 20px;
-    background-color: #111; /* Fundo escuro para contraste com o corpo */
-    border-radius: 8px; /* Borda levemente arredondada */
-    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.2); /* Sombra verde suave */
+    border: 1px solid #000;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Centraliza o texto dentro do .signin */
 }
 
-/* Estilização de Títulos */
-h1, h2, h3 {
-    color: #0f0; /* Cor verde */
+.content {
     text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #0f0; /* Linha inferior verde para dividir os títulos */
 }
 
-/* Estilização do Texto */
+h1, h2, h3 {
+    color: #0f0;
+    font-family: 'Anonymous Pro', monospace;
+}
+
 p {
-    margin: 10px 0;
-    line-height: 1.6; /* Espaçamento entre linhas para facilitar a leitura */
-}
-
-/* Estilização de Listas */
-ul {
-    margin: 10px 0;
-    padding-left: 20px; /* Recuo para listas */
-}
-
-li {
-    margin: 5px 0; /* Espaçamento entre itens da lista */
-}
-
-/* Destaque de Texto com <strong> */
-strong {
-    color: #00ff00; /* Texto destacado em verde brilhante */
-}
-
-/* Ajustes para Dispositivos Menores */
-@media (max-width: 768px) {
-    body {
-        padding: 15px; /* Menor padding em dispositivos menores */
-    }
-
-    header, section {
-        padding: 15px; /* Ajusta padding interno */
-    }
-
-    h1, h2, h3 {
-        font-size: 1.2em; /* Reduz levemente o tamanho dos títulos */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    header, section {
-        padding: 10px;
-        box-shadow: 0px 2px 4px rgba(0, 255, 0, 0.2); /* Sombra menor em telas menores */
-    }
-
-    h1 {
-        font-size: 1.3em; /* Ajuste adicional para dispositivos muito pequenos */
-    }
-
-    h2 {
-        font-size: 1.1em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
-
-    p, li {
-        font-size: 0.9em; /* Texto reduzido para melhor ajuste em telas pequenas */
-    }
-
-    ul {
-        padding-left: 15px; /* Recuo reduzido para economizar espaço */
-    }
+    margin: 0;
+    text-align: center;
+    color: #0f0;
+    overflow-y: auto;
+    overflow-x: hidden; /* Remova a rolagem horizontal */
 }
