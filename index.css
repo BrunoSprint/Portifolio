@@ -34,7 +34,7 @@ body {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adicione seus estilos específicos para tablets aqui */
+    section .signin { width: 100% }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -110,7 +110,6 @@ section .signin {
     padding: 40px;
     border-radius: 4px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.9);
-    /* Alinhando o conteúdo dentro da área de signin */
     flex-direction: column;
     text-align: center;
     overflow-y: hidden;
