@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tipos de Malware</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="fox.css">
+        <style>
+            
+            #canvas-container {
+                max-width: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; 
+            }
+
+            canvas {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="canvas-container">
+            <canvas id="c"></canvas>
+            <p id="canvas-description"></p>
+        </div>
+        
+<h1>Normas de Segurança da Informação:</h1>
+<p>Segundo as Normas ISO/IEC 27001 e 27002, a informação é um conjunto de dados que, quando processado, gera uma informação.<br><br>
+Ainda segundo essas normas, a informação é um ativo que, como qualquer outro, é importante e essencial para os negócios de uma organização, e deve ser adequadamente protegida.
+<br><br>
+Assim, a Norma ISO/IEC 27002 (ABNT, 2013b) define "vulnerabilidade" como uma fragilidade de um ativo ou grupo de ativos que pode ser explorada por uma ou mais ameaças de maneira intencional ou não, representando riscos à organização.</p><br><br>
+            
+
+<h1>As vulnerabilidades podem advir de várias situações, por exemplo:</h1>
+<ul>
+    <li>Software sem licença de funcionamento e sem aplicação de patch de atualização.</li>
+    <li>Ausência de procedimento de controle de acesso e utilização de equipamentos por funcionários, visitantes e pessoal contratado.</li>
+    <li>Senhas fracas utilizadas no controle de acesso a aplicativos de software.</li>
+    <li>Redes de comunicação sem proteção, suscetíveis a grampeamento, interrupções ou desvios.</li>
+    <li>Material inadequado empregado nas construções.</li>
+    <li>Uso de equipamentos obsoletos e sem manutenção.</li>
+    <li>Instalações físicas desprotegidas contra incêndios, inundações e desastres naturais (por exemplo, sala de equipamentos instalada no subsolo de uma edificação localizada em área suscetível a enchentes).</li>
+    <li>Ausência de política de RH e presença de funcionários insatisfeitos nos ambientes de trabalho.</li>
+</ul>
+<h1>Veja agora algumas variações de Ataques Lógicos.</h1><br><br>
+
+<h1>Ataques de negação de serviço (DoS – Denial of Service):</h1>
+<p>Seu objetivo é sobrecarregar um serviço levando ao colapso. Por exemplo, em um sistema de compras de ingresso on-line. Em que milhares de requisições são executadas ao mesmo tempo para pedir o mesmo local de uma arquibancada, chegará um momento em que o servidor não conseguirá atender a demanda e irá cair (ficará off-line). Uma ótima contramedida são os sistemas de detecção de intrusos (IDS - Intrusion Detection System).  Essa estratégia é basicamente 1 (um) atacante para 1 (um) determinado alvo. Com isso, uma boa prática é a utilização de um Intrusion Prevention System (IPS), que reduz as ameaças e vulnerabilidades conhecidas por meio do monitoramento do tráfego de rede, podendo responder de imediato um possível ataque na rede, essa técnica é usada também em conjunto com o sistemas de detecção de intrusos (IDS - Intrusion Detection System). Assim, temos dois tipos: os lógicos (usam falhas de software) e os inundação (visam estourar o processamento da CPU, memória) por meio de milhares de requisições, em um breve espaço de tempo.</p><br><br>
+
+<h1>Ataques de negação de serviço distribuído (DDoS):</h1>
+<p>É o mesmo que o DoS, a sua diferença é que nesse há um sequestro de milhares de outros computadores na Internet, em que são implantados agentes de ataque. Assim que for oportuno, é disparada uma mensagem a esses agentes que, por sua vez, realizarão uma série de requisições a um site alvo para deixá-lo off-line. O ditado “a união faz a força” é a estratégia desse tipo de ataque.</p><br><br>
+
+
+
+<h1>Harvesting:</h1>
+<p>Consiste em coletar endereços de e-mail por meio de varreduras em páginas Web e arquivos de listas de discussão, entre outros. Para tentar combater esta técnica, muitas páginas Web e listas de discussão apresentam os endereços de forma ofuscada (por exemplo, substituindo o '@' por '(at)' e os pontos pela palavra 'dot'). Infelizmente, tais substituições são previstas por vários dos programas que implementam esta técnica.</p><br><br>
+
+
+<h1>Spam:</h1>
+<p>Quem nunca recebeu um spam? Eles são mensagens de e-mail com conteúdo atrativo ou que chame a atenção (queda de cabelo, ganhe dinheiro, trabalhe duas horas por dia etc.). O problema é que eles são enviados para milhares de pessoas todos os dias. A maioria das empresas que fornecem serviço de e-mail tentam categorizar esse tipo de mensagem, mas é praticamente impossível filtrar todos os tipos de spams. Assim, fica a cargo do usuário apagar tais mensagens para não lotar a caixa de e-mail. A fonte de informação para esse tipo de mensagem pode ser por meio de comércio ilegal de dados, lista de discussões em fóruns, geração de e-mails (pega-se um domínio, por exemplo @google.com.br e começa com nomes com a letra “a’, e assim por diante). Segundo a Symantec, em 2018, 55% de todos os e-mails são considerados spam.</p><br><br>
+
+
+<h1>Ataques de força bruta, em inglês Brute Force Attack:</h1>
+<p>Esse nome se dá por tentar diferentes combinações possíveis de senha até chegar ao valor esperado. Hoje em dia, muitas pessoas não se preocupam em colocar uma senha forte (com mais de 8 dígitos e que contenham números, letras maiúscula, minúsculas e caracteres especiais). Logo, um ataque de força bruta é uma boa opção de ataque. Com o avanço da computação paralela (placas de vídeos com multiprocessadores/threads), é possível gerar milhões de combinações em pouco tempo.</p><br><br>
+
+<h1>Ataques de dicionário:</h1>
+<p>A diferença desse ataque é que existe uma lista de palavras comuns que são mais usadas. O programa simplesmente varre essa lista até encontrá-las, por exemplo, “vidalouca”, assim por diante.</p><br><br>
+
+<h1>Falsificação (spoofing):</h1>
+<p>Seu objetivo é ter acesso a determinado a algum tipo de recurso se passando por outro usuário que tem acesso permitido. Por exemplo, troca-se o endereço da rede para se passar por uma pessoa autorizada e, assim, acessar determinadas informações.</p><br><br>
+
+
+<h1>Ataque Homem do meio, em inglês Man-in-the-Middle:</h1>
+<p>É quando um atacante intercepta os dados de uma mensagem, podendo alterar ou modificar sem o consentimento ou ciência da vítima.</p><br><br>
+
+<h1>Engenharia Social:</h1>
+<p>É um dos meios mais efetivos de se obter informações, pois seu ataque central é sobre o elemento humano. Assim, o agente ameaçador pode se passar por uma pessoa que deveria ter acesso ou autorização a determinado recurso. Esses agentes se aproveitam de pessoas novatas ou que não conheçam de fato as políticas de segurança da organização. As pessoas por natureza tendem a ser prestativas quando a solicitação envolve emoções (carinho, atenção, etc.) e acabam passando informações sigilosas.</p><br><br>
+
+
+<h1>Envenenamento de cache ou spoofing de DNS:</h1>
+<p>É a quebra de segurança na integridade dos dados em um Sistema de Nomes e Domínios ( Domain Name System - DNS), e ocorre quando os dados que são enviados para a cache de um servidor de DNS, mas não partem de um servidor DNS original autorizado. Esse tipo de ataque virtual, que explora vulnerabilidades no servidor de DNS, visa redirecionar o tráfego dos servidores legítimos para servidores ou caminhos falsos.</p><br><br>
+
+<h1>Phishing:</h1>
+<p>Ataque que utiliza engenharia social para obter informações confidenciais de seus alvos, como senhas, números de cartão de crédito, contas corporativas, etc. Para que isso se realize, quem atua é o phisher ('pescador'), nome dado a quem executa um phishing ou se passa por uma entidade ou pessoa de confiança, fazendo uma “comunicação oficial” via e-mail ou por mensagens em redes sociais. A comunicação geralmente contém um link para uma página web falsa que solicita ao usuário o fornecimento de informações pessoais, as quais caem nas mãos do atacante. Uma tentativa de phishing pode acontecer por meio de websites ou e-mails falsos que imitam a imagem ou site de uma empresa famosa e confiável para poder chamar a atenção das vítimas. Normalmente, os conteúdos dos sites ou e-mails com phishing prometem promoções extravagantes para o internauta ou solicitam que ele faça uma atualização dos seus dados bancários, evitando o cancelamento da conta, por exemplo. O internauta mais desatento e desinformado, quando cai nessa armadilha, é redirecionado para uma página na web semelhente à da empresa ou do banco original, na qual deverá informar os seus dados pessoais e bancários. A vítima pensa estar apenas confirmando as suas informações junto ao banco, quando, na verdade, está enviando todos os dados para um criminoso. Muitas empresas desenvolvem softwares antiphishing, que oferecem filtros mais eficientes de correio spam e notificações sobre qualquer tipo de suspeita de irregularidade em conteúdos da internet.</p><br><br>
+
+<h1>Ransomware:</h1>
+<p>É um malware que teve suas primeiras vítimas no ano de 2005 na Rússia e veio crescendo durante os próximas anos, a técnica usada é encriptar a base de dados do usuário e pedir um pagamento pelo resgate (ransom), geralmente em criptomoedas, dificultando a ação de autoridades no impedimento que a transação entre as vítimas e sequestradores, além de dificultar a rastreabilidade. Esse pagamento é para que a vítima receba a chave de criptografia que foi gerada durante o ataque, geralmente, os usuários desses ataques são corporativos, por terem valor agregado na sua base de dados, os arquivos encriptados permanecem no dispositivo do usuário. Todavia, o acesso a essas informações só é possível com a chave gerada pelo atacante, que exige pagamento para disponibilizar tal chave para vítima embora não haja qualquer garantia de que a chave será mesmo concedida após pagamento.</p><br><br>
+
+<h1>Injeção de Structure Query Language - SQL:</h1>
+<p>Uma injeção de SQL afeta diretamente sites que possuem banco de dados que usam SQL, o objetivo é injetar através das caixas de textos dos sites uma instrução em SQL que pode dar total permissão para o atacante acessar o banco de dados do site, permitindo que o atacante possa criar, ler, atualizar, alterar e até excluir os dados existentes neste banco. Por sua vez, os dados ficam simplesmente acessíveis para o atacante fazer tudo, se o atacante não alterar drasticamente os dados desta base é muito improvável que descubram esse tipo de ataque.</p><br><br>
+
+<h1>Aircrack-ng: </h1>
+<p>É um programa usado para sniffer de pacotes, analisando redes WLAN e quebra de chaves em redes wi-fi que usam protocolos 802.11. Ele quebra as chaves baseadas em WEP, WPA e WPA2-PSK, e funciona em qualquer placa de rede wireless, usando monitoramento bruto e pode capturar e analisar pacotes dos protocolos 802.11ª, 802.11b e 802.11g.</p><br><br>
+
+<h1>Adware</h1> 
+<p>software que reproduz, baixa ou mostra conteúdos para o dispositivo eletrônico do usuário geralmente sem seu consentimento. O adware aparece de forma inesperada e indesejada pelo usuário na forma de um pop-up ou mudanças no motor de busca do navegador. Normalmente, essa nova janela apresenta informações de destaque do site ou, na maioria dos casos, publicidades e anúncios (nesse caso, trata-se de Adware ADS, sendo 'ADS' a abreviação da palavra inglesa advertising, que significa 'publicidade'). Os pop-ups são recursos de publicidade dos desenvolvedores dos websites como tentativa de chamar a atenção dos internautas, mas que acabam por incomodar grande parte dos usuários da internet. Atualmente os navegadores de internet mais populares - Firefox, Google Chrome, Opera, Safari, Microsoft Edge, entre outros - têm extensões que ajudam a bloquear os pop-ups, visto que a grande maioria dos conteúdos apresentados foge ao interesse do usuário. Mas, caso seja preciso, os internautas podem habilitar os pop-ups para que sejam executados em sites específicos, por exemplo.</p><br><br>
+
+<h1>Application-Layer Attack</h1>
+<p>Na tradução do inglês, 'ataques na camada de aplicação' são ataques realizados nas comunicações dos aplicativos, o que pode gerar permissões de acesso aos invasores em computadores infectados.</p><br><br>
+
+<h1>APT (Advanced Persistent Threat/ Ameaça Persistente Avançada) </h1>
+<p>Conjunto de ataques que visa burlar a segurança de uma entidade específica. Normalmente utiliza ferramentas bastante complexas e envolve vários vetores de ataque. São ataques direcionados, silenciosos e demoram a ser percebidos.</p><br><br>
+
+<h1>ARP Spoofing (Address Resolution Protocol Spoofing)</h1>
+<p>Conhecido por envenenar as tabelas ARP. O  atacante enche a rede de pacotes ARP contendo informações maliciosas, assim seu endereço MAC (Media Access Control) é associado ao IP (Internet Protocol) do equipamento da vítima e o cracker passa a receber qualquer pacote direcionado para o computador da vítima, podendo realizar modificações e novos envios praticamente sem ser detectado.</p><br><br>
+
+<h1>Backdoor</h1>
+<p>Falhas de segurança no sistema operacional de um equipamento ou em aplicativos, permitindo acesso à informações de computadores e outros dispositivos sem que firewalls ou antivírus interceptem. </p><br><br>
+
+<h1>Banker</h1>
+<p>É um trojan que rouba dados das contas bancárias de usuário. Ele coleta as informações por meio de vídeos, capturas de tela ou redirecionamento do tráfego na web, enviando esses dados ao atacante por e-mail ou hospedando-os em um servidor. </p><br><br>
+
+<h1>BlackHat SEO</h1>
+<p>É o envenenamento dos motores de busca, sendo um conjunto de técnicas que rankeiam sites maliciosos entre os principais resultados mostrados em pesquisas na web. A ideia é vincular os usuários a conteúdos não seguros e de reputação duvidosa.</p><br><br>
+
+<h1>Bloatware </h1>
+<p>Softwares indesejados instalados sem o consentimento do usuário durante a instalação de outro software. Normalmente, são softwares de parceiros da empresa dona do software que o usuário verdadeiramente deseja instalar.</p><br><br>
+
+<h1>Bootkit</h1>
+<p>Malware que se hospeda no início do sistema operacional do computador, buscando ganhar acesso total e irrestrito às suas funções, garantindo que sejam executados códigos maliciosos a cada inicialização de sistema do computador.</p><br><br> 
+
+<h1>Botnet</h1>
+<p>Rede de computadores bots (que realizam tarefas automáticas por meio da internet) infectados por códigos maliciosos controlados por um hacker que se passa pelo usuário, utilizando seus recursos para trabalhar de forma distribuída. Geralmente são utilizados para ataques spam, DDoS e distribuição de códigos maliciosos. </p><br><br>
+
+<h1>Browser hijacking</h1>
+<p>Técnica de ataque na qual o atacante altera as configurações do web browser, redirecionando-o para sites maliciosos ou usando-o para roubar informações e espalhar malwares pela rede. </p><br><br>
+
+<h1>Bluebugging</h1>
+<p>Invasão possibilitada por brechas de segurança em dispositivos bluetooth. Utilizando equipamentos que capturam sinal bluetooth e aplicativos de modificação sem autorização, crackers roubam dados e senhas de dispositivos móveis que estejam com a tecnologia habilitada no momento do ataque. </p><br><br>
+
+<h1>Centro de Comando e Controle (C&C)</h1>
+<p>Servidor que permite controlar e administrar os equipamentos infectados que integram a botnet. Possibilita enviar remotamente comandos aos zumbis da rede, como baixar  códigos maliciosos ou executar determinados processos de interesse do hacker.</p><br><br>
+
+<h1>Clickjacking</h1>
+<p>Em tradução livre, significa 'sequestro de cliques'; refere-se à introdução de um código malicioso em sites com o objetivo de capturar cliques para redirecionar o usuário a páginas maliciosas. Nesse tipo de ataque, os crackers utilizam elementos transparentes sobre componentes que geram bastantes cliques. </p><br><br>
+
+<h1>Compromised-Key Attack</h1>
+<p>São ataques realizados para acessar chaves de registro específicas do sistema operacional. Quando o cracker as acessa, torna-se capaz de gerar logs, realizando o processo de descriptografia de senhas para então invadir contas e serviços cadastrados.</p><br><br>
+
+<h1>Crack</h1>
+<p>Código de atualização inserido dentro do código de um software já existente, que o modifica para ativar ilegalmente sua licença de uso de forma gratuita e eliminar as restrições dos usuários. </p><br><br>
+
+<h1>Cross-Site scripting (XSS)</h1>
+<p>Vulnerabilidade que permite inserir códigos HTML em formulários web para alterar sua aparência original, além de permitir a inserção de scripts nos cookies do site que possibilitam ao cracker acessá-los e realizar roubos de credenciais e de identidade.</p><br><br>
+
+<h1>Data Modification </h1>
+<p>Decodificação de pacotes web capturados no meio de seu trajeto, seguida de uma modificação das informações nele contidas para posteriormente serem enviados ao  real destinatário.</p><br><br>
+
+<h1>Defacement</h1>
+<p>Ataque a websites. O invasor acessa o servidor e modifica o conteúdo da página, inserindo um código próprio nela. Ataque comum entre hackativistas, que também é bastante praticado por crackers, os quais inserem scripts maliciosos nas páginas em questão.</p><br><br>
+
+<h1>DNS hijacking</h1>
+<p>Tipo de ataque no qual um cracker obtém o controle sobre pedidos de DNS, podendo direcionar domínios verdadeiros para endereços de IP maliciosos.</p><br><br>
+
+<h1>DNS poisoning</h1>
+<p>Traduzido como 'envenenamento do DNS', trata-se de ataques nos quais o usuário pode navegar normalmente pela web, mas tem seus dados enviados a todo momento para um computador invasor. </p><br><br>
+
+<h1>DNS Spoofing</h1>
+<p>Consiste na alteração dos endereços correspondentes aos servidores DNS da vítima, trocando-os por servidores maliciosos e dando ao cracker o controle sobre as buscas realizadas pela vítima para redirecioná-la a sites maliciosos. </p><br><br>
+
+<h1>Doxxing</h1>
+<p>Consiste na  obtenção de dados privados de uma pessoa e em sua divulgação pública na web. Tais dados podem tanto ser simples, encontrados com uma rápida pesquisa em sites de busca, quanto sensíveis, obtidos por hacking.</p><br><br>
+
+<h1>Drive-by-download</h1>
+<p>Ataque que adiciona scripts maliciosos ao código-fonte de sites, executados quando o usuário acessa essa página. Com isso, é possível que exploits sejam executados no equipamento-vítima para instalar malwares. </p><br><br>
+
+<h1>Droppers</h1>
+<p>São programas que extraem outros arquivos de seu próprio código. Geralmente eles extraem vários arquivos do computador-alvo e instalam  um pacote de malwares. </p><br><br>
+
+<h1>Dumpster Diving</h1>
+<p>Traduzido como “mergulhar no lixo”. Envolve a obtenção de dados sobre um usuário para “assumir sua identidade” e acessar seus perfis de usuário ou outras áreas restritas da internet ou rede local. Esses dados podem ser obtidos tanto pelo mergulho literal em lixeiras (mais comum quando o alvo são grandes empresas ou celebridades) quanto pela pesquisa de dados digitais descartados. </p><br><br>
+
+<h1>Exploit</h1>
+<p>Programas maliciosos desenvolvidos por crackers com códigos executáveis que vasculham vulnerabilidades de segurança dos softwares e se aproveitam delas para roubar dados e/ou criar bots para outros ataques mais complexos.</p><br><br>
+
+<h1>Força bruta</h1>
+<p>Ataques que testam automaticamente listas de credenciais pertencentes a um dicionário (que contém palavras e expressões comumente utilizadas em senhas) contra as credenciais armazenadas no servidor atacado, realizando inúmeras tentativas de login até que a chave correta seja encontrada e libere o acesso do cracker ao equipamento-alvo. </p><br><br>
+
+<h1>Greyware</h1>
+<p>Chamados de PUA ou, em tradução do inglês, 'Aplicativos Potencialmente Indesejados'. Não são considerados maliciosos, porém podem afetar a confidencialidade das informações de um sistema ou rede. Podem instalar softwares indesejados, alterar o comportamento padrão de um hardware ou executar ações não autorizadas pelo usuário. </p><br><br>
+
+<h1>Hijacker</h1>
+<p>Scripts que raptam navegadores de internet e podem causar comportamentos estranhos no browser, como bloquear acesso a determinados sites, alterar a página inicial do navegador, exibir pop-ups ou abrir novas guias de anúncios, etc.</p><br><br>
+
+<h1>Hoax</h1>
+<p>Em tradução livre, significa 'engano'. Consiste no envio de e-mails e mensagens em redes sociais com conteúdo enganoso. Essas mensagens são geralmente alarmantes ou impactantes, parecendo ser de fontes confiáveis, levando os usuários a encaminhá-las a seus contatos. Com isso, crackers conseguem coletar telefones, nomes de usuário e endereços de e-mail para futuramente realizar ataques spam.</p> <br><br>
+
+<h1>ICMP Attack</h1>
+<p>Ataques aos protocolos ICMP: um computador cujo endereço IP tenha sido alterado para o endereço IP de outro usuário pode enviar inúmeras mensagens de erro para servidores remotos, que responderão ao endereço responsável pelos comandos com a mesma intensidade. Isso provoca quedas de conexão e travamento ou lentidão no computador vitimado.</p><br><br>
+
+<h1>IP Spoofing </h1>
+<p>É uma técnica para mascarar o IP do computador. Com isso, crackers podem atacar servidores ou computadores sem a possibilidade de rastreamento, pois trabalham com um endereço de IP falso.</p><br><br>
+
+<h1>Jailbreak</h1>
+<p>Processo que elimina restrições impostas por fabricantes e desenvolvedores de sistemas operacionais de smartphones e tablets. A realização desse processo é mais comum em iPhones e permite  o download de aplicativos não autorizados pela Apple em lojas alternativas, como a Cydia. O jailbreak pode oferecer riscos aos equipamentos, deixando-os suscetíveis a ataques de crackers. </p><br><br>
+
+<h1>Keylogger</h1>
+<p>Tipo de malware que grava tudo que o usuário digita no teclado do computador, tablet ou smartphone alvo. Possibilita ao cracker descobrir senhas, números de cartão de crédito, dados bancários e conversas por aplicativos de mensagem ou e-mail. </p><br><br>
+
+<h1>Malware (Malicious Software, ou Software Malicioso)</h1>
+<p>Software destinado a se infiltrar em um sistema de computador alheio de forma ilícita com o intuito de causar algum dano ou roubo de informações (confidenciais ou não). Vírus de computador, worms, trojan horses (cavalos de troia) e spywares são considerados malwares.</p><br><br>
+
+<h1>Malvertising</h1>
+<p>Tipo de golpe no qual são criados anúncios maliciosos que, por meio de serviços de publicidade, são espalhados pela web. </p><br><br>
+
+<h1>Man In The Browser (MITB)</h1>
+<p>Em tradução do inglês, o “Homem no Navegador” é um caso à parte de ataque MITM, explorando as vulnerabilidades no navegador da vítima para inserir  códigos maliciosos nas páginas visitadas com a função de espionar o tráfego de rede e capturar dados na memória. As páginas alteradas são idênticas às originais, tornando esse ataque praticamente indetectável.</p><br><br>
+
+<h1>Password-based Attacks</h1>
+<p>Ataques criados por programas cujo objetivo é tentar logar em determinado site inserindo senhas de modo repetitivo. Isso gera instabilidades na verificação de login e pode ocasionar senhas duplicadas. </p><br><br>
+
+<h1>Pharming</h1>
+<p>Ataque no qual há o redirecionamento de um nome de domínio para um endereço de IP diferente do original. A ideia do ataque é redirecionar o usuário a um site malicioso, mesmo que ele esteja acessando a URL correta.</p><br><br>
+
+<h1>Phreaker</h1>
+<p>Acrônimo de phone + freak. Os phreakers são crackers que atacam a área de telefonia. São responsáveis por roubar o sinal de aparelhos e desbloquear celulares remotamente, entre outras ações. </p><br><br>
+
+<h1>Polimórfico</h1>
+<p>Também chamado 'metamórfico'. É um tipo de vírus que pode alterar seu próprio código binário, pois tem a capacidade de editar e reescrever seu código. Ele que rouba as informações existentes no computador e é muito difícil de ser rastreado. </p><br><br>
+
+<h1>Pod Slurping</h1>
+<p>Roubo de informações utilizando dispositivos portáteis pré-configurados para tal finalidade (podem ser pendrives, iPods, tablets, etc).</p><br><br>
+
+<h1>Repudiation Attacks</h1>
+<p>Podem acontecer quando os comandos corretos de rastreamento de logs de usuário não são criados corretamente em uma aplicação ou sistema. Dessa forma, crackers podem utilizar essas brechas para reformular os envios de comandos, modificando o endereçamento de informações para servidores maliciosos. </p><br><br>
+
+<h1>Rogue</h1>
+<p>Chamado 'rogueware', é um malware que se passa por um antivírus ou outra solução de segurança. O início do ataque se dá pela apresentação de janelas e pop-ups advertindo o usuário de que há um malware em seu sistema, indicando uma falsa solução de segurança. O usuário fica inclinado a baixar o rogueware em seu computador.</p><br><br> 
+
+<h1>Rootkit</h1>
+<p>Ferramenta que oculta o acesso e controle de um cracker em um sistema informático. Tem a capacidade de fazer com que malwares sejam indetectáveis pelos antivírus e por soluções de segurança, de ocultar arquivos, processos e portas de acesso que permitam uso remoto e arbitrário do equipamento e de violar as funções do sistema operacional.</p><br><br>
+
+<h1>Scam</h1>
+<p>Tipo de golpe realizado por meios tecnológicos, como e-mails ou websites falsos. Esses golpes visam prejudicar financeiramente seus alvos por meio de artifícios enganosos propagados via tecnologia. As táticas mais utilizadas são o anúncio de um ganho financeiro extraordinário ou pedidos de assistência por meio de doações de caridade. O e-mail/site convida a vítima a fazer um depósito ou a transferir dinheiro para colaborar com a falsa campanha, levando o usuário a informar dados sensíveis aos golpistas. </p><br><br>
+
+<h1>Scareware</h1>
+<p>É um tipo de malware que convence a vítima a comprar ou baixar programas inúteis e potencialmente perigosos usando a técnica da engenharia social. Muitas vezes estão disfarçados como softwares de segurança; seu real objetivo é roubar informações.</p><br><br>
+
+<h1>Screenlogger</h1>
+<p>Similar ao keylogger, o screenlogger é um tipo de malware que registra os cliques do mouse dados pelo usuário-alvo, seguido do envio de prints da tela aos invasores. </p><br><br>
+
+<h1>Session hijacking</h1>
+<p>Termo que designa o momento em que um atacante consegue o controle sobre uma sessão ativa de um usuário-alvo por meio do roubo de seu identificador. Isso provoca a violação de mecanismos de autenticação de serviço e permite que o cracker execute ações de qualquer natureza autorizadas para aquela sessão.</p><br><br>
+
+<h1>Smishing</h1>
+<p>Tipo de phishing no qual o cracker estabelece contato com a vítima via mensagens de texto, nas quais se passa por uma entidade ou outro contato confiável. Geralmente o cracker se passa por porta-voz de um suposto serviço de assinatura paga, o qual pode ser cancelado por meio de um website malicioso, que levará a vítima a fazer download de um malware para seu telefone. </p><br><br>
+
+<h1>Sidejacking</h1>
+<p>Similar ao Session hijacking, porém envolve o cracker e a vítima estarem conectados na mesma rede; é comum que ocorram ataques desse tipo envolvendo dispositivos conectados em pontos de Wi-Fi sem segurança. </p><br><br>
+
+<h1>Sniffer Attack</h1>
+<p>Ataque realizado por softwares que capturam pacotes de informações trocados dentro de uma rede. Caso os dados estejam descriptografados, os crackers podem acessar conversas e logs registrados no computador-alvo. </p><br><br>
+
+<h1>Spam</h1>
+<p>Termo que se refere a e-mails, SMS, mensagens em redes sociais ou correios de voz não solicitados, geralmente enviados para um grande número de pessoas. Podem ser usados para divulgação publicitária ou para a divulgação massiva de links e/ou anexos maliciosos. 'Spam' é um termo de origem inglesa cujo significado designa uma mensagem eletrônica recebida, mas não solicitada pelo usuário. O conteúdo de um spam é normalmente uma mensagem publicitária que tem o objetivo de divulgar os serviços ou produtos de alguma empresa a uma grande massa de usuários de e-mail. Originalmente, a palavra 'spam' era usada para designar um produto alimentar, normalmente carne de porco enlatada. O termo passou a ser utilizado para designar um e-mail ou mensagem não solicitados, graças ao sketch humorístico do grupo britânico Monty Python, no qual a palavra 'spam' é repetida de forma exaustiva.</p><br><br>
+
+<h1>Spamming</h1>
+<p>É a prática de envio em massa de spam; 'spammer' é a designação dada ao seu autor. As características principais do spamming são o envio da mensagem para milhares de pessoas ao mesmo tempo e a ausência de autorização do destinatário para utilização do seu endereço eletrônico. Além das corriqueiras mensagens para fins comerciais, existem vários outros tipos de spam que invadem as caixas de mensagens dos usuários. Como exemplo, há aquelas mensagens maliciosas que tentam induzir o usuário a informar seus dados pessoais ou de sua conta bancária ou, ainda, executar algum programa que contém vírus. Outros tipos de spam, como boatos ou correntes, que estimulam ou forçam o usuário a reencaminhar a mensagem para os seus contatos, têm geralmente o objetivo de expandir a base de dados de e-mail do spammer. Em muitos casos, os usuários não têm o cuidado de ocultar os endereços de e-mail quando reencaminham esse tipo de mensagem.</p><br><br>
+
+<h1>Spear phishing</h1>
+<p>Traduzido literalmente do inglês como 'pesca com arpão', essa é uma variante mais eficaz do phishing; os phishers conseguem determinar quais usuários têm relação com determinada entidade financeira. Desse modo, os e-mails são enviados de maneira 'personalizada', aumentando consideravelmente a margem de êxito da fraude.</p><br><br>
+
+<h1>Spoofing</h1>
+<p>Técnicas que permitem falsificar intermediários de alguma comunicação informática. Podem existir inúmeros tipos de spoofing, pois sua nomenclatura depende do tipo de dado que está sendo falsificado. São exemplos: IP spoofing, no qual ocorre a geração de pacotes com endereços IP falsos, DNS spoofing, no qual as respostas DNS são alteradas para vincularem um domínio real a um IP malicioso, entre outros.</p><br><br>
+
+<h1>Spyware</h1>
+<p>Programas de monitoramento e coleta de informações pessoais que são enviadas a terceiros, sem permissão ou conhecimento do usuário. Muitas vezes os usuários instalam spywares sem saber que o estão fazendo, como, por exemplo, quando aceitam o contrato de licença de certos softwares gratuitos. Spyware é um software espião, que tem o objetivo de observar e roubar informações pessoais do usuário que utiliza o computador ou celular em que o programa está instalado, retransmitido-as para uma fonte externa na internet sem o conhecimento ou consentimento do usuário. Os spywares funcionam apenas como ferramenta de monitoramento das informações. Normalmente são instalados em computadores de uma empresa para que o comportamento dos funcionários possa ser monitorado durante as horas de serviço, funcionando como uma ferramenta de controle e segurança dos conteúdos produzidos, e acessados por meio dos equipamentos da empresa (e, ainda mais importante, por quem). Outra atividade também bastante comum é o uso de spywares por firmas comerciais para descobrir as preferências e gostos dos internautas, com o objetivo de vender essas informações para empresas de publicidade pela internet.</p><br><br>
+
+<h1>Stealth</h1>
+<p>Tipo de malware muito difícil de ser encontrado e eliminado pelo antivírus, pois utiliza técnicas de programação (como a criptografia) para embaralhar seu código, fazendo com que o antivírus não o reconheça como malicioso. Geralmente utilizado para roubo de informações.</p> <br><br>
+
+<h1>Tailgating</h1>
+<p>Ocorre quando um invasor acessa uma área restrita e de acesso controlado eletronicamente, movendo-se por trás de uma pessoa que tenha acesso legítimo. É um tipo de ataque que dá aos invasores, de forma não autorizada, o acesso físico a um material-alvo, possibilitando roubo de informações, alterações no equipamento para torná-lo inutilizável ou mesmo a instalação de softwares espiões. </p><br><br>
+
+<h1>TCP Syn / TCP ACk Attack</h1>
+<p>Ataques realizados em comunicações entre servidor e cliente. São enviadas mais requisições do que a capacidade suportada pelas máquinas; a vítima é derrubada dos servidores e perde a conexão. Pode causar travamentos nos computadores atingidos.</p><br><br>
+
+<h1>TCP Sequence Number Attack</h1>
+<p>Diversas tentativas de prever a sequência numérica que identifica pacotes de dados enviados e recebido em uma conexão. Quando realizada com sucesso, pode simular um servidor falso e se tornar o destino das informações do computador-alvo. </p><br><br>
+
+<h1>TCP Hijacking</h1>
+<p>Consiste no roubo de uma sessão TCP entre duas máquinas para interceptar e capturar as informações trocadas entre elas.</p><br><br>
+
+<h1>Teardrop</h1>
+<p>Forma de ataque DoS na qual crackers utilizam IPs falsos para sobrecarregar os computadores vitimados.</p><br><br>
+
+<h1>Trojan</h1>
+<p>Também conhecido como “Cavalo de Troia”, é um software nocivo utilizado por hackers para invadir computadores. Ao contrário dos vírus, ele não se dissemina automaticamente, mas geralmente vem em um arquivo anexado por e-mail. Trojan ou  'cavalo de troia' é um malware que traz consigo vários tipos de malware; ao se instalar num computador, smartphone ou outro tipo de hardware, tem a finalidade de 'dominar' o sistema operacional do usuário.</p><br><br>
+
+<h1>Vírus</h1>
+<p>Denominação dada a pequenos programas desenvolvidos para causar danos em diversos níveis, podendo afetar a integridade de arquivos de dados (removendo partes ou arquivos por completo) e prejudicando um computador em particular ou toda a rede de uma empresa. Em informática, um vírus de computador é um programa de software malicioso (malware) desenvolvido com o intuito de causar graves transtornos aos usuários do computador ou a uma empresa. Os vírus eletrônicos se espalham muito rapidamente nas redes de computadores e na internet.</p> <br><br>
+
+<h1>Vishing</h1>
+<p>Variante do phishing que ocorre via comunicações Voip. A vítima é contatada por crackers que falsificam mensagens de empresas ou de instituições importantes e confiáveis e solicitam informações confidenciais da pessoa, como números de cartão de crédito, CPF etc. </p><br><br>
+
+<h1>Watering hole</h1>
+<p>Ataque em que os cibercriminosos realizam o reconhecimento dos padrões de navegação dos usuários-alvo e infectam sites mais visitados por eles com conteúdos e links maliciosos.</p><br><br>
+
+<h1>Worm</h1>
+<p>malware que pode se “reproduzir” propagando-se por meio de vulnerabilidades na rede, dispositivos USB, e-mails ou redes sociais. Os worms não precisam de um “arquivo anfitrião”, de um hospedeiro que contenha seu código malicioso. Esses malwares modificam o registro do sistema para serem carregados a cada inicialização. Forma de ataque em que um software malicioso se propaga pelas redes e documentos de usários e se autorreplica. </p><br><br>
+
+<h1>Zero-day (0-day)</h1>
+<p>Termo dado a vulnerabilidades recém-descobertas em sistemas, protocolos ou aplicativos para as quais ainda não foram criados patches de segurança. Esse tipo de falha pode ser aproveitada pelos atacantes para propagar outras ameaças, como trojans, vírus e worms.</p><br><br>
+
+<h1>Zumbi</h1>
+<p>Computador infectado e controlado remotamente por um atacante. Quando existem diversos zumbis conectados em uma rede ela é chamada de 'botnet'.</p><br><br>
+
+
+
+
+
+
+    <footer>
+    <h1><a href="index.html">Voltar para a Galeria</a></h1>
+    </footer>
+
+
+    </body>
+    <script src="main.js"></script>
+</html>
