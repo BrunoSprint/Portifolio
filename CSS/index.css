@@ -137,3 +137,29 @@ p {
     text-align: center;
     color: #0f0;
 }
+
+.botao-verde {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #0f0;
+    background-color: #000;
+    border: 2px solid #0f0;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 8px #0f0, 0 0 16px #0f0; /* neon glow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .botao-verde:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #0f0, 0 0 24px #0f0;
+  }
+  
+  .centro {
+    text-align: center;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+  }
+  
